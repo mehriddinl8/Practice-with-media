@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 20px;
+}
+.main{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.main div{
+    width: 50%;
+    height: 20vh;
+}
+.block1{
+    background-color: aqua;
+}
+.block2{
+    background-color: pink;
+    display: none;
+}
+
+@media (max-width: 500px){
+    .main{
+        flex-direction: column;
+    }
+    .main div{
+        width: 100%;
+    }
+    .block2{
+        display: block;
+    }
+}
